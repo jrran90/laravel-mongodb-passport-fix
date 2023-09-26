@@ -7,7 +7,7 @@ use Illuminate\Console\Command;
 class MongoDBPassportFix extends Command
 {
     /**
-     * The name and signature of the console command.
+     * The name and signature of the console command
      *
      * @var string
      */
@@ -15,7 +15,7 @@ class MongoDBPassportFix extends Command
                             {--rollback : Rollback the Passport fix}';
 
     /**
-     * The console command description.
+     * The console command description
      *
      * @var string
      */
@@ -26,7 +26,7 @@ class MongoDBPassportFix extends Command
      *
      * @var string
      */
-    protected $mongo_model = 'Jenssegers\Mongodb\Eloquent\Model';
+    protected $mongo_model = 'MongoDB\Laravel\Eloquent\Model';
 
     /**
      * Laravel Eloquent Model to Replace with
@@ -36,7 +36,7 @@ class MongoDBPassportFix extends Command
     protected $laravel_model = 'Illuminate\Database\Eloquent\Model';
 
     /**
-     * Passport vendor files location
+     * Passport vendor file location
      *
      * @var string
      */
